@@ -182,7 +182,27 @@ picture {
     display: flex;            
     flex-direction: column;   
     gap: 1.5rem;
+    position: relative;
   }
+
+  .card a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1; /* Sits on top of the card content */
+}
+
+.card a {
+   transition: ease-in-out 0.3s;
+   text-decoration: none; 
+}
+
+.card a:hover {
+   color:var(--yellow); 
+}
 
     img.illustration {
     width: 100%;
@@ -229,4 +249,15 @@ picture {
     time {
         display: block;
         }
+
+    @media (max-width: 480px) {
+  :root {
+    /* type scale */
+    --base-size: .875rem;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+}
 }
