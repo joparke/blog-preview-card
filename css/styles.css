@@ -204,6 +204,11 @@ picture {
    color:var(--yellow); 
 }
 
+a:focus {
+    outline: 4px solid #7A00CC; ]
+    outline-offset: 4px;       
+  }
+
     img.illustration {
     width: 100%;
     border-radius: .625rem;
@@ -230,19 +235,18 @@ picture {
         color: var(--gray500);
     }    
 
-    .card-footer {
+    figure {
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 0.75rem;
     }
 
-    .card-footer img {
-        width: 32px;
-        height: 32px;
+    figure img {
+        width: 2rem;
+        height: 2rem;
 } 
-    .card-footer p.author {
-        margin-top: 0;
+   figcaption {
         font-weight: 800;
     }
 
@@ -250,7 +254,7 @@ picture {
         display: block;
         }
 
-    @media (max-width: 480px) {
+    @media (max-width: 30rem) {
   :root {
     /* type scale */
     --base-size: .875rem;
