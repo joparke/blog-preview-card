@@ -205,7 +205,7 @@ picture {
 }
 
 a:focus {
-    outline: 4px solid #7A00CC; ]
+    outline: 4px solid #7A00CC; 
     outline-offset: 4px;       
   }
 
